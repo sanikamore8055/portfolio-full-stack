@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+}
+
+/* Navbar */
+nav{
+    background:#2c3e50;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:#3498db;
+    color:white;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+/* Sections */
+.section{
+    padding:40px;
+    max-width:900px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-top:20px;
+    border-radius:8px;
+    box-shadow:0px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+}
+
+button{
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    background:#2c3e50;
+    color:white;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+<div><b>My Portfolio</b></div>
+<div>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+<h1>Hello, I'm Sanika</h1>
+<p>Computer Science Student | Future Full Stack Developer</p>
+</div>
+
+<!-- About -->
+<div class="section" id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>
+I am a Computer Science student passionate about web development,
+full-stack applications, and building real-world projects.
+Currently learning React, FastAPI, and modern web technologies.
+</p>
+</div>
+</div>
+
+<!-- Projects -->
+<div class="section" id="projects">
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Student Productivity Tracker</h3>
+<p>Task management web app using HTML, JavaScript and FastAPI backend.</p>
+</div>
+
+<div class="card">
+<h3>Online Voting System</h3>
+<p>Secure voting system built using Python Flask and SQLite.</p>
+</div>
+
+</div>
+
+<!-- Skills -->
+<div class="section" id="skills">
+<h2>Skills</h2>
+<div class="card">
+<p>
+HTML • CSS • JavaScript • Python • FastAPI • Git • GitHub
+</p>
+</div>
+</div>
+
+<!-- Contact -->
+<div class="section" id="contact">
+<h2>Contact Me</h2>
+<div class="card">
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Message"></textarea>
+<button onclick="sendMsg()">Send Message</button>
+</div>
+</div>
+
+<footer>
+<p>© 2026 Sanika | Portfolio Website</p>
+</footer>
+
+<script>
+function sendMsg(){
+    alert("Message sent successfully!");
+}
+</script>
+
+</body>
+</html>
