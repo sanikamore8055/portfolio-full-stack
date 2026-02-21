@@ -34,6 +34,4 @@ The goal of this project is to build a professional online presence and demonstr
 - Contact form
 - Simple navigation menu
 
----
 
-## 📂 Project Structure
